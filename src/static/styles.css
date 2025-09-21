@@ -78,6 +78,29 @@ section h3 {
 .participants-container {
   margin-top: 15px;
   padding-top: 12px;
+
+#filters-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+#filters-toolbar input,
+#filters-toolbar select {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+  #filters-toolbar {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: stretch;
+  }
+}
   border-top: 1px dashed #ccc;
 }
 
